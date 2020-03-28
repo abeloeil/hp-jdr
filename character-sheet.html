@@ -1,0 +1,1425 @@
+<div class="container">
+    <!-- Start base -->
+    <div class="row border-bottom">
+        <div class="col-4">
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Nom</strong>
+                </div>
+            </div>
+            <div class="row">
+                <input type="text" name="attr_character_name" class="col-12">
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Sexe</strong>
+                </div>
+            </div>
+            <div class="row">
+                <select name="attr_sexe" class="col-12"/>
+                    <option value="femme" selected="selected">Femme</option>
+                    <option value="homme">Homme</option>
+                </select>
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Age</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" name="attr_age" value="11" min="11" max="77" class="w-100" />
+                </div>
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Sang</strong>
+                </div>
+            </div>
+            <div class="row">
+                <select name="attr_sexe" class="col-12">
+                    <option value="Sang pur" selected="selected">Sang pur</option>
+                    <option value="Sang-mélé">Sang-mélé</option>
+                    <option value="Né-moldu">Né-moldu</option>
+                </select>
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Niveau de scolarité</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" value="1" min="1" max="7" name="attr_niveau_scolarite" class="w-100">
+                </div>                
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Argent</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" value="0" min="0" name="attr_argent" class="w-100">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Caractéristiques</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Force :</strong>
+                        </div>                        
+                        <input type="number" min="0" value="0" max="999" name="attr_force" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Constitution :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_constitution" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Taille :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_taille" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Perception :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_perception" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Intelligence :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_intelligence" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Dextérité :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_dexterite" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Apparence :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_apparence" class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>Pouvoir :</strong>
+                        </div>
+                        <input type="number" min="0" value="0" max="999" name="attr_pouvoir" class="col-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Points de vie</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" min="0" value="0" max="999" name="attr_pv" class="w-100" />
+                </div>
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Idée</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" name="attr_idee" value="(@{intelligence}*5)" disabled="true" class="w-100" />
+                </div>
+            </div>
+            
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Chance</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" name="attr_idee" value="(@{pouvoir}*5)" disabled="true" class="w-100" />
+                </div>
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Maison</strong>
+                </div>
+            </div>
+            <div class="row">
+                <select name="attr_maison" class="col-12">
+                    <option value="Gryffondor" selected="selected">Gryffondor</option>
+                    <option value="Poufsouffle">Poufsouffle</option>
+                    <option value="Serdaigle">Serdaigle</option>
+                    <option value="Serpentard">Serpentard</option>
+                </select>
+            </div>
+            <div class="row bg-dark-green center">
+                <div class="col-12">
+                    <strong>Axiomes de maison</strong>
+                </div>
+            </div>
+            <div class="row">
+                <textarea 
+                    name="attr_axiomes_maison" 
+                    rows="5"
+                    class="col-12"
+                ></textarea>
+            </div>
+        </div>
+    </div> 
+    <!-- End base -->
+
+    <!-- Start competence generales -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Compétences générales</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1"></div>
+        <div class="col-4">
+            <strong>Compétence</strong>
+        </div>
+        <div class="col-4">
+            <strong>Actuelle</strong>
+        </div>
+        <div class="col-4">
+            <strong>Maximale</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{acrobatie}" name="roll_AcrobatieCheck"></button>
+        </div>
+        <div class="col-4">
+            Acrobatie / Quidditch
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_acrobatie"/>
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="60" max="100" class="col-12" name="attr_acrobatie_max" disabled />
+        </div>        
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{artisanat}" name="roll_ArtisanatCheck"></button>
+        </div>
+        <div class="col-4">
+            Artisanat
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="5" max="100" class="col-12" name="attr_artisanat"/>
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="30" max="100" class="col-12" name="attr_artisanat_max"/>
+        </div>    
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{athletisme}" name="roll_AthletismeCheck"></button>
+        </div>
+        <div class="col-4">
+            Athlétisme
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_athletisme" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="75" max="100" class="col-12" name="attr_athletisme_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{bagarre}" name="roll_BagarreCheck"></button>
+        </div>
+        <div class="col-4">
+            Bagarre
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_bagarre" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="50" max="100" class="col-12" name="attr_bagarre_max" />
+        </div>        
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{bibliotheque}" name="roll_BibliothequeCheck"></button>
+        </div>
+        <div class="col-4">
+            Bibliothèque
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="15" max="100" class="col-12" name="attr_bibliotheque" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="75" max="100" class="col-12" name="attr_bibliotheque_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{commandement}" name="roll_CommandementCheck"></button>
+        </div>
+        <div class="col-4">
+            Commandement
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_commandement" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="60" max="100" class="col-12" name="attr_commandement_max" disabled /> 
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_scolaire}" name="roll_ConnaissanceScolaireCheck"></button>
+        </div>
+        <div class="col-4">
+            Connaissance scolaire
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_connaissance_scolaire" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="50" max="100" class="col-12" name="attr_connaissance_scolaire_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{deguisement}" name="roll_deguisementCheck"></button>
+        </div>
+        <div class="col-4">
+            Déguisement
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="5" max="100" class="col-12" name="attr_deguisement" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="55" max="100" class="col-12" name="attr_deguisement_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{discretion}" name="roll_discretionCheck"></button>
+        </div>
+        <div class="col-4">
+            Discrétion
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_discretion" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="60" max="100" class="col-12" name="attr_discretion_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{dressage}" name="roll_dressageCheck"></button>
+        </div>
+        <div class="col-4">
+            Dressage / soin
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_dressage" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="30" max="100" class="col-12" name="attr_dressage_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{empathie}" name="roll_empathieCheck"></button>
+        </div>
+        <div class="col-4">
+            Empathie
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_empathie" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="75" max="100" class="col-12" name="attr_empathie_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{esquive}" name="roll_esquiveCheck"></button>
+        </div>
+        <div class="col-4">
+            Esquive
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="25" max="100" class="col-12" name="attr_esquive" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="80" max="100" class="col-12" name="attr_esquive_max" disabled/>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{fouille}" name="roll_fouilleCheck"></button>
+        </div>
+        <div class="col-4">
+            Fouille / ménage
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_fouille" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="80" max="100" class="col-12" name="attr_fouille_max" disabled/>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{langue_etrangere}" name="roll_langueEtrangereCheck"></button>
+        </div>
+        <div class="col-4">
+            Langue étrangère / rune
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="0" max="100" class="col-12" name="attr_langue_etrangere" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="95" max="100" class="col-12" name="attr_langue_etrangere_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{langue_natale}" name="roll_langueNataleCheck"></button>
+        </div>
+        <div class="col-4">
+            Langue natale
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="70" max="100" class="col-12" name="attr_langue_natale" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="95" max="100" class="col-12" name="attr_langue_natale_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{orientation}" name="roll_orientationCheck"></button>
+        </div>
+        <div class="col-4">
+            Orientation
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_orientation" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="80" max="100" class="col-12" name="attr_orientation_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{persuasion}" name="roll_persuasionCheck"></button>
+        </div>
+        <div class="col-4">
+            Persuasion / Baratin
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="10" max="100" class="col-12" name="attr_persuasion" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="80" max="100" class="col-12" name="attr_persuasion_max" disabled/>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{psychologie}" name="roll_psychologieCheck"></button>
+        </div>
+        <div class="col-4">
+            Psychologie
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="5" max="100" class="col-12" name="attr_psychologie" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="70" max="100" class="col-12" name="attr_psychologie_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{secourisme}" name="roll_secourismeCheck"></button>
+        </div>
+        <div class="col-4">
+            Secourisme
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="0" max="100" class="col-12" name="attr_secourisme" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_secourisme_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{survie}" name="roll_survieCheck"></button>
+        </div>
+        <div class="col-4">
+            Survie
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="0" max="100" class="col-12" name="attr_survie" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_survie_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{triche}" name="roll_tricheCheck"></button>
+        </div>
+        <div class="col-4">
+            Triche
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="0" max="100" class="col-12" name="attr_triche" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="40" max="100" class="col-12" name="attr_triche_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{vigilance}" name="roll_vigilanceCheck"></button>
+        </div>
+        <div class="col-4">
+            Vigilance
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="20" max="100" class="col-12" name="attr_vigilance" />
+        </div>
+        <div class="col-4">
+            <input type="number" min="0" value="75" max="100" class="col-12" name="attr_vigilance_max" disabled />
+        </div>
+    </div>
+    <!-- End competence generales -->
+
+    <!-- Start listes des sorciers -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Listes des sorciers</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <strong>Compétence</strong>
+        </div>
+        <div class="col-3">
+            <strong>Actuelle</strong>
+        </div>
+        <div class="col-3">
+            <strong>Maximale</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_sorcier_1}" name="roll_connaissanceSorcier1Check"></button>
+        </div>
+        <div class="col-5">
+            Connaissance <br>
+            <input type="text" class="w-100" name="attr_connaissance_sorcier_1_name">
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_connaissance_sorcier_1" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_connaissance_sorcier_1_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_sorcier_2}" name="roll_connaissanceSorcier2Check"></button>
+        </div>
+        <div class="col-5">
+            Connaissance  <br>
+            <input type="text" class="w-100" name="attr_connaissance_sorcier_2_name">
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_connaissance_sorcier_2" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_connaissance_sorcier_2_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_des_moldus}" name="roll_connaissanceDesMoldusCheck"></button>
+        </div>
+        <div class="col-5">
+            Connaissance des moldus (S)
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_connaissance_des_moldus" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="40" max="100" name="attr_connaissance_des_moldus_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{culture_g_sorciers}" name="roll_cultureGSorciersCheck"></button>
+        </div>
+        <div class="col-5">
+            Culture G sorciers (S)
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="20" max="100" name="attr_culture_g_sorciers" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="80" max="100" name="attr_culture_g_sorciers_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{jeux_sorciers}" name="roll_jeuxSorciersCheck"></button>
+        </div>
+        <div class="col-5">
+            Jeux Sorciers (S)
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="10" max="100" name="attr_jeux_sorciers" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="80" max="100" name="attr_jeux_sorciers_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{mythes_legendes_sorciers}" name="roll_mythesLegendesSorciersCheck"></button>
+        </div>
+        <div class="col-5">
+            Mythes et légendes des sorciers
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="5" max="100" name="attr_mythes_legendes_sorciers" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="75" max="100" name="attr_mythes_legendes_sorciers_max" disabled/>
+        </div>
+    </div>
+    <!-- End listes des sorciers -->
+
+    <!-- Start listes des moldus -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Listes des moldus</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <strong>Compétence</strong>
+        </div>
+        <div class="col-3">
+            <strong>Actuelle</strong>
+        </div>
+        <div class="col-3">
+            <strong>Maximale</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{bricolage}" name="roll_bricolageCheck"></button>
+        </div>
+        <div class="col-5">
+            Bricolage
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="10" max="100" name="attr_bricolage" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_bricolage_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{conduire}" name="roll_conduireCheck"></button>
+        </div>
+        <div class="col-5">
+            Conduire
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_conduire" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="30" max="100" name="attr_conduire_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_moldu_1}" name="roll_connaissanceMoldu1Check"></button>
+        </div>
+        <div class="col-5">
+            Connaissance <br />
+            <input type="text" name="attr_connaissance_moldu_1_name" class="w-100" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_connaissance_moldu_1" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_connaissance_moldu_1_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_moldu_2}" name="roll_connaissanceMoldu2Check"></button>
+        </div>
+        <div class="col-5">
+            Connaissance <br />
+            <input type="text" name="attr_connaissance_moldu_2_name" class="w-100" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_connaissance_moldu_2" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_connaissance_moldu_2_max" />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{connaissance_moldu_2}" name="roll_connaissanceMoldu2Check"></button>
+        </div>
+        <div class="col-5">
+            Connaissance <br />
+            <input type="text" name="attr_connaissance_moldu_2_name" class="w-100" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="0" max="100" name="attr_connaissance_moldu_2" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_connaissance_moldu_2_max" />
+        </div>
+    </div>    
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{culture_g_moldue}" name="roll_cultureGMoldueCheck"></button>
+        </div>
+        <div class="col-5">
+            Culture G Moldue (M)
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="20" max="100" name="attr_culture_g_moldue" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="80" max="100" name="attr_culture_g_moldue_max" disabled />
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{jeux_moldus}" name="roll_jeuxMoldusCheck"></button>
+        </div>
+        <div class="col-5">
+            Jeux Moldus (M)
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="10" max="100" name="attr_jeux_moldus" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="80" max="100" name="attr_jeux_moldus_max" disabled/>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{serrurerie}" name="roll_serrurerieCheck"></button>
+        </div>
+        <div class="col-5">
+            Serrurerie
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="10" max="100" name="attr_serrurerie" />
+        </div>
+        <div class="col-3">
+            <input type="number" class="col-12" min="0" value="50" max="100" name="attr_serrurerie_max" />
+        </div>
+    </div>
+
+    <!-- End listes des moldus -->
+
+
+    <!-- start compétences scolaire -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Compétences scolaires</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1"></div>
+        <div class="col-4">
+            <strong>Compétence</strong>
+        </div>
+        <div class="col-4">
+            <strong>Actuelle</strong>
+        </div>
+        <div class="col-4">
+            <strong>Maximale</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{arithmancie}" name="roll_arithmancieCheck"></button>
+        </div>
+        <div class="col-4">
+            Arithmancie
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_arithmancie">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_arithmancie_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{art_magique}" name="roll_artMagiqueCheck"></button>
+        </div>
+        <div class="col-4">
+            Art magique
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_art_magique">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_art_magique_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{art_moldu}" name="roll_artMolduCheck"></button>
+        </div>
+        <div class="col-4">
+            Art moldu
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_art_moldu">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_art_moldu_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{astrologie}" name="roll_astrologieCheck"></button>
+        </div>
+        <div class="col-4">
+            Astrologie
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_astrologie">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_astrologie_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{astronomie}" name="roll_astronomieCheck"></button>
+        </div>
+        <div class="col-4">
+            Astronomie
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_astronomie">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_art_astronomie_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{botanique}" name="roll_botaniqueCheck"></button>
+        </div>
+        <div class="col-4">
+            Botanique
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_botanique">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_botanique_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{cours_de_vol}" name="roll_coursDeVolCheck"></button>
+        </div>
+        <div class="col-4">
+            Cours de vol
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_cours_de_vol">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_cours_de_vol_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{defense_force_mal}" name="roll_defenseForceMalCheck"></button>
+        </div>
+        <div class="col-4">
+            Défense contre les forces du mal
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_defense_force_mal">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_defense _force_mal_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{divination}" name="roll_divinationCheck"></button>
+        </div>
+        <div class="col-4">
+            Divination
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_divination">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_divination_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{enchantements}" name="roll_enchantementsCheck"></button>
+        </div>
+        <div class="col-4">
+            Enchantements
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_enchantements">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_enchantements_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{etude_des_runes}" name="roll_etudeDesRunesCheck"></button>
+        </div>
+        <div class="col-4">
+            Etude des runes
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_etude_des_runes">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_etude_des_runes_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{histoire_magie}" name="roll_histoireMagieCheck"></button>
+        </div>
+        <div class="col-4">
+            Histoire de la magie
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_histoire_magie">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_histoire_magie_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{mauvais_sorts}" name="roll_mauvaisSortsCheck"></button>
+        </div>
+        <div class="col-4">
+            Mauvais sorts
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_mauvais_sorts">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_mauvais_sorts_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{metamorphose}" name="roll_metamorphoseCheck"></button>
+        </div>
+        <div class="col-4">
+            Métamorphose
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_metamorphose">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_metamorphose_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{musique_magique}" name="roll_musiqueMagiqueCheck"></button>
+        </div>
+        <div class="col-4">
+            Musique magique
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_musique_magique">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_musique_magique_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{musique_moldue}" name="roll_musiqueMoldueCheck"></button>
+        </div>
+        <div class="col-4">
+            Musique moldue
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_musique_moldue">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_musique_moldue_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{potions}" name="roll_potionsCheck"></button>
+        </div>
+        <div class="col-4">
+            Potions
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_potions">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_potions_max">
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-1">
+            <button type="roll" value="/roll 1d100<@{soints_crea_magique}" name="roll_sointsCreaMagiqueCheck"></button>
+        </div>
+        <div class="col-4">
+            Soins des créatures magiques
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_soints_crea_magique">
+        </div>
+        <div class="col-4">
+            <input type="number" class="col-12" min="0" max="100" value="0" name="attr_soints_crea_magique_max">
+        </div>
+    </div>
+    <!-- end compétences scolaire -->
+
+    <!-- start coup de pouce / crochepattes -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Coup de pouce et croche patte du destin</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-6">
+            <span>
+                Coup de pouce <br/>
+                <select name="attr_coup_de_pouce" class="w-100">
+                    <option value="" selected></option>
+                    <option value="Allié(s) influent(s)">Allié(s) influent(s)</option>
+                    <option value="Apprentissage inné">Apprentissage inné</option>
+                    <option value="Dette éternelle">Dette éternelle</option>
+                    <option value="Hérédité">Hérédité</option>
+                    <option value="Influent">Influent</option>
+                    <option value="Objet de collection">Objet de collection</option>
+                    <option value="Objet magique">Objet magique</option>
+                    <option value="Prodige">Prodige</option>
+                    <option value="Riche">Riche</option>
+                    <option value="Sorts innés">Sorts innés</option>
+                </select>
+            </span>
+        </div>
+        <div class="col-6">
+            <span>
+                Croche patte <br/>
+                <select name="attr_croche_patte" class="w-100">
+                    <option value="" selected></option>
+                    <option value="Amour à sens unique">Amour à sens unique</option>
+                    <option value="Dénigré">Dénigré </option>
+                    <option value="Honni">Honni</option>
+                    <option value="Hybride">Hybride</option>
+                    <option value="Inapte">Inapte</option>
+                    <option value="Limitation">Limitation</option>
+                    <option value="Pauvre">Pauvre</option>
+                    <option value="Phobie(s)">Phobie(s)</option>
+                    <option value="Souffre-douleur">Souffre-douleur</option>
+                    <option value="Trouble de l’apprentissage">Trouble de l’apprentissage</option>
+                </select>
+            </span>
+        </div>
+    </div>
+    <!-- end coup de pouce / crochepattes -->
+
+    <!-- start avantages / desavantages -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Avantages et désavantages</strong>
+        </div>
+    </div>
+    <fieldset class="repeating_avantagedesavantage row"> 
+        <input type="text" name="attr_avantagedesavantage" class="col-6" /> 
+      </fieldset>
+    <!-- end avantages / desavantages -->
+
+    <!-- start Sortilèges -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Sortilèges</strong>
+        </div>
+    </div>
+    <div class="row bg-green border-bottom">
+        <div class="col-2">
+            <strong>Nom</strong>
+        </div>
+        <div class="col-1">
+            <strong>Niv.</strong>
+        </div>
+        <div class="col-1">
+            <strong>Type</strong>
+        </div>
+        <div class="col-2">
+            <strong>Cibles</strong>
+        </div>
+        <div class="col-5">
+            <strong>Effets</strong>
+        </div>
+        <div class="col-2">
+            <strong>Malus</strong>
+        </div>
+    </div>
+    <fieldset class="repeating_sortilege row border-bottom"> 
+        <input type="text" name="attr_nom" class="col-2"/>
+        <input type="number" name="attr_niveau" min="0" value="0" class="col-1"/> 
+        <input type="text" name="attr_type" class="col-1"/>
+        <input type="text" name="attr_cible" class="col-2"/> 
+        <input type="text" name="attr_effets" class="col-5"/>
+        <input type="text" name="attr_malus" class="col-2" />
+    </fieldset>
+    <!-- end Sortilèges -->
+
+    <!-- start Potions -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Potions</strong>
+        </div>
+    </div>
+    <div class="row bg-green border-bottom">
+        <div class="col-3">
+            <strong>Nom</strong>
+        </div>
+        <div class="col-1">
+            <strong>Niv.</strong>
+        </div>
+        <div class="col-5">
+            <strong>Effets</strong>
+        </div>
+        <div class="col-2">
+            <strong>Malus</strong>
+        </div>
+    </div>
+    <fieldset class="repeating_potion row border-bottom"> 
+        <input type="text" name="attr_nom" class="col-3"/>
+        <input type="number" name="attr_niveau" min="0" value="0" class="col-1"/> 
+        <input type="text" name="attr_effets" class="col-5"/>
+        <input type="text" name="attr_malus" class="col-2" />
+    </fieldset>
+    <!-- end Potions -->
+
+    <!-- start Inventaire -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Inventaire</strong>
+        </div>
+    </div>
+    <div class="row bg-green border-bottom">
+        <div class="col-5">
+            <strong>Nom</strong>
+        </div>
+        <div class="col-7">
+            <strong>Effets</strong>
+        </div>
+    </div>
+    <fieldset class="repeating_inventaire row border-bottom"> 
+        <input type="text" name="attr_nom" class="col-5"/>
+        <input type="text" name="attr_effets" class="col-7"/>
+    </fieldset>
+    <!-- end Inventaire -->
+
+    <!-- start Baguette -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Baguette</strong>
+        </div>
+    </div>
+    <div class="row bg-green border-bottom">
+        <div class="col-3">
+            <strong>Bois</strong>
+        </div>
+        <div class="col-3">
+            <strong>Taille</strong>
+        </div>
+        <div class="col-3 ">
+            <strong>Coeur</strong>
+        </div>
+        <div class="col-3">
+            <strong>Affinité</strong>
+        </div>
+    </div>
+    <div class="row border-bottom">
+        <input type="text" name="attr_baguette_bois" class="col-3"/>
+        <input type="number" name="attr_baguette_taille" class="col-3"/>
+        <input type="text" name="attr_baguette_coeur" class="col-3"/>
+        <input type="text" name="attr_baguette_affinite" class="col-5"/>
+    </div>
+    <!-- end Baguette -->
+
+    <!-- start Balais -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Balais</strong>
+        </div>
+    </div>
+    <div class="row bg-green border-bottom">
+        <div class="col-5">
+            <strong>Marque</strong>
+        </div>
+        <div class="col-7">
+            <strong>Caractéristiques et bonus</strong>
+        </div>
+        
+    </div>
+    <div class="row border-bottom">
+        <input type="text" name="attr_balais_marque" class="col-5"/>
+        <input type="text" name="attr_balais_bonus" class="col-7"/>
+    </div>
+    <!-- end Balais -->
+
+    <!-- start Familier -->
+    <div class="row bg-dark-green center border-bottom">
+        <div class="col-12">
+            <strong>Familier</strong>
+        </div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col-4 bg-green">Nom</div>
+        <div class="col-2 bg-green">Point de vie</div>
+        <div class="col-6 bg-green">Lien avec le maitre</div>
+    </div>
+
+    <div class="row border-bottom">    
+        <input type="text" name="attr_familier_nom" class="col-4"/>
+        <div class="col-2">
+            <input type="number" name="attr_familier_pv"min="0"/>
+        </div>
+        <textarea name="attr_familier_link" rows="3" class="col-6"></textarea>
+    </div>
+    <div class="row border-bottom">
+        <div class="col-6">
+            <div class="row border-bottom bg-dark-green center">
+                <div class="col-12">
+                    <strong>Caractéristiques</strong>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Force</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_force"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Constitution</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_constitution"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Taille</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_taille"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Perception</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_perception"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Dextérité</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_dexterite"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Intelligence</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_intelligence"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Apparence</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_apparence"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Pouvoir</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_pouvoir"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row border-bottom bg-dark-green center">
+                <div class="col-12">
+                    <strong>Compétences</strong>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Acrobatie</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_acrobatie"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Discrétion</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_discretion"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Esquive</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_esquive"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Orientation</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_orientation"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Survie</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_survie"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Vigilance</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_vigilance"/>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row border-bottom">
+        <div class="col-6">
+            <div class="row border-bottom bg-dark-green center">
+                <div class="col-12">
+                    <strong>Caractères secondaires</strong>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Armure</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_armure"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Combat</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_combat"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Mouvement</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_mouvement"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Idée</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_idee"/>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="col-5">
+                    <strong>Chance</strong>
+                </div>
+                <div class="col-7">
+                    <input type="number" class="col-sm-7" min="0" value="0" name="attr_familier_chance"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row border-bottom bg-dark-green center">
+                <div class="col-12">
+                    <strong>Capacités</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start Familier -->
+</div>
